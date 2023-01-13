@@ -13,6 +13,15 @@ def main():
     substitute_template_format = template_format.substitute(book="science fiction", author="Zafar Igbal")
     print(substitute_template_format)
 
+    # use dictionary for substitute method
+    data = {
+        "book": "science fiction",
+        "author": "Zafar Iqbal"
+    }
+
+    substitute_template_format = template_format.substitute(data)
+    print(substitute_template_format)
+
 
 if __name__ == '__main__':
     main()
