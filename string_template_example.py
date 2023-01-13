@@ -8,6 +8,11 @@ def main():
     string_format = "We have to go to the {0} by {1}.".format("New Market", "bus")
     print(string_format)
 
+    # string formatting using template with placeholders
+    template_format = Template("I am reading a ${book} book by ${author}.")
+    substitute_template_format = template_format.substitute(book="science fiction", author="Zafar Igbal")
+    print(substitute_template_format)
+
 
 if __name__ == '__main__':
     main()
