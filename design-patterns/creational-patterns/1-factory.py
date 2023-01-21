@@ -23,3 +23,12 @@ class Rabbit:
     def speak(self):
         return "Squeak!"
 
+
+def get_pet(pet="horse"):
+
+    """ Basic Factory function """
+
+    pets = dict(horse=Horse("Charlie"), rabgit=Rabbit("Coco"))
+
+    return pets[pet]
+
