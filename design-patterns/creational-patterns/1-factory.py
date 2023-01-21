@@ -32,3 +32,10 @@ def get_pet(pet="horse"):
 
     return pets[pet]
 
+
+# Getting horse object
+horse = get_pet("horse")
+print(horse.speak())
+
+rabbit = get_pet("rabbit")
+print(rabbit.speak())
